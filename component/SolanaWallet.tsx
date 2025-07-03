@@ -35,7 +35,7 @@ export const SolanaWallet = ( props : SolanaWalletInterface) : React.ReactNode =
     
 
     <div>
-      {publickey.map((s) => ( <div key={Math.random()*10000}> {s.toString()}</div>) )}
+      {publickey.map((s , index : number)  => ( <div key={Math.random()*10000}> {s.toString()} { "--> " +  ++index }</div>)  )}
     </div>
     </div>
     )
